@@ -1,0 +1,16 @@
+SANDROID KERNEL FEATURES :
+==========================
+	
+	===============================
+	SANDROID KERNEL v1.0 29-10-2016
+	===============================
+		* Compiled use SaberMod Toolchain gcc 4.7.4
+		* Support for Dynamic-FSync
+		* USB fast charge
+		* Support for Fast-IDLING of CPU
+		* Optimized Console FrameBuffer for upto 70% increase in Performance
+		* Optimized Integer SQRT. for upto 3x faster operation
+		* Reduced Kernel Log Buffer to minimum
+		* Add HID Keybord & Mouse support
+		* will add later when I done and release it, now in testing state
+
