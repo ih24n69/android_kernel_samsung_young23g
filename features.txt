@@ -12,5 +12,6 @@ SANDROID KERNEL FEATURES :
 		* Optimized Integer SQRT. for upto 3x faster operation
 		* Reduced Kernel Log Buffer to minimum
 		* Add HID Keybord & Mouse support
+		* Add Power suspend support
 		* will add later when I done and release it, now in testing state
 
