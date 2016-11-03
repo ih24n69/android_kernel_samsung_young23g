@@ -553,6 +553,7 @@ static int unlazy_walk(struct nameidata *nd, struct dentry *dentry)
 
 err_child:
 	spin_unlock(&dentry->d_lock);
+
 err_parent:
 	spin_unlock(&parent->d_lock);
 err_root:
@@ -2170,6 +2171,7 @@ user_path_parent(int dfd, const char __user *path, struct nameidata *nd,
 	struct filename *s = getname(path);
 	int error;
 
+
 	/* only LOOKUP_REVAL is allowed in extra flags */
 	flags &= LOOKUP_REVAL;
 
@@ -2263,6 +2265,7 @@ static int may_delete(struct inode *dir,struct dentry *victim,int isdir)
  */
 static inline int may_create(struct inode *dir, struct dentry *child)
 {
+	audit_inode_child(dir, child, AUDIT_TYPE_CHILD_CREATE);
 	if (child->d_inode)
 		return -EEXIST;
 	if (IS_DEADDIR(dir))
