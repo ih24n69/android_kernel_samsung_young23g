@@ -61,3 +61,4 @@ obj-$(CONFIG_SEC_DEBUG) += sec_debug.o sec_getlog.o sec-common.o sec-reboot.o
 obj-$(CONFIG_SEC_LOG) += sec-log.o
 
 obj-$(CONFIG_SEC_THERMISTOR) += sec_thermistor.o
+obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
