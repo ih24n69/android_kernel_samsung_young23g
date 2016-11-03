@@ -13,5 +13,7 @@ SANDROID KERNEL FEATURES :
 		* Reduced Kernel Log Buffer to minimum
 		* Add HID Keybord & Mouse support
 		* Add Power suspend support
+		* Enable some cpu governon
+		* Enable all TCP Congestion
 		* will add later when I done and release it, now in testing state
 
